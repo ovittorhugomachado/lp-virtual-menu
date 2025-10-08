@@ -1,14 +1,12 @@
 import { Header } from './componentes/header'
-import { HeroSection } from './componentes/sections/hero-section'
+import { Main } from './componentes/main'
 
 function App() {
 
   return (
     <div className=' w-[90vw]  h-screen'>
       <Header />
-      <main>
-        <HeroSection />
-      </main>
+      <Main />
       <footer></footer>
     </div>
   )
