@@ -35,8 +35,8 @@ export const Header = () => {
                     <li className="font-medium">
                         <a href="#">Entrar</a>
                     </li>
-                    <li className="featured-button">
-                        <a href="#">Criar conta</a>
+                    <li>
+                        <a className="featured-button" href="#">Criar conta</a>
                     </li>
                 </ul>
             </nav>
@@ -64,8 +64,8 @@ export const Header = () => {
                         <li className="font-medium">
                             <a href="#">Entrar</a>
                         </li>
-                        <li className="featured-button">
-                            <a href="#">Criar conta</a>
+                        <li>
+                            <a className="featured-button" href="#">Criar conta</a>
                         </li>
                     </ul>
                 </nav>

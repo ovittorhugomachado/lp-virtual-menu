@@ -16,7 +16,6 @@ body {
 h3 {
   font-size: 20px;
   font-weight: 600;
-  color: #021B74
 }
 
 p {
@@ -35,6 +34,7 @@ p {
   border-radius: 80px;
   padding: 6px 25px;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .arrow-hero-section {
