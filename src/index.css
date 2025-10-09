@@ -42,10 +42,35 @@ p {
   animation: moveArrow 2s infinite ease-in-out;
 }
 
+.bg-blue-sand {
+  background-image: url('/image-bg-blue-sand.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-blue-sand-icon {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url('/image-bg-blue-sand.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-blue-cloud {
+  background-image: url('/image-bg-blue-cloud.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 @keyframes moveArrow {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateX(0);
   }
+
   50% {
     transform: translateX(-30px);
   }

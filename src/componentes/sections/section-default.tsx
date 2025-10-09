@@ -1,27 +1,17 @@
-import { InfoBox, InfoBoxWithImage } from "../info-box"
+import type { ReactNode } from "react";
 
-type Props = {
-    index: number,
-    title: string,
-    subtitle?: string,
-    text: string,
-    image?: string;
-}
+type SectionDefaultProps = {
+    index: number;
+    children: ReactNode;
+};
 
-export const SectionDefault = ({
-    index,
-    text,
-    title,
-    subtitle,
-    image
-}: Props) => {
-
+export const SectionDefault = ({ index, children }: SectionDefaultProps) => {
     return (
-        <section className="w-full h-full relative flex items-center justify-center overflow-visible">
+        <section className="w-full md:h-full relative flex items-center justify-center overflow-visible">
             {index % 2 === 0 ? (
                 <>
                     <img
-                        className="absolute -left-20 top-0 -z-10 object-contain"
+                        className="hidden md:block absolute -left-20 top-0 -z-10 object-contain"
                         src="./image-bg.png"
                         alt="background-image"
                     />
@@ -34,7 +24,7 @@ export const SectionDefault = ({
             ) : (
                 <>
                     <img
-                        className="absolute -left-20 top-30 -z-10 object-contain"
+                        className="hidden md:block absolute -left-20 top-30 -z-10 object-contain"
                         src="./image-bg.png"
                         alt="background-image"
                     />
@@ -45,20 +35,7 @@ export const SectionDefault = ({
                     />
                 </>
             )}
-            {image && image.length > 0 ? (
-                <InfoBoxWithImage
-                    title={title}
-                    subTitle={subtitle}
-                    text={text}
-                    image={image}
-                />
-            ) : (
-                <InfoBox
-                    title={title}
-                    subTitle={subtitle}
-                    text={text}
-                />
-            )}
+            {children}
             {index % 2 === 0 ? (
                 <img
                     className="hidden sm:block absolute -right-10 top-40 w-20 rotate-180"
