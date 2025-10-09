@@ -1,10 +1,8 @@
-import { useContext } from "react"
-import { SiteContext } from "../../context/site-context"
-import { FaArrowLeftLong } from "react-icons/fa6"
+import { useContext } from "react";
+import { SiteContext } from "../../context/site-context";
 
 export const HeroSection = () => {
-
-    const { logo, slogan } = useContext(SiteContext)
+    const { logo, slogan } = useContext(SiteContext);
 
     return (
         <section className="w-full h-[80vh] relative flex items-center justify-center">
@@ -21,7 +19,6 @@ export const HeroSection = () => {
                 />
                 <h5 className="text-md sm:text-xl text-center">{slogan}</h5>
             </div>
-            <FaArrowLeftLong size={40} className="text-[#E0FE7B] z-55 fixed bottom-10 rotate-270 arrow-hero-section" />
         </section>
-    )
-}
+    );
+};

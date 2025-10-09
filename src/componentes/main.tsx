@@ -4,6 +4,7 @@ import { HeroSection } from "./sections/section-hero"
 import { SectionDefault } from "./sections/section-default"
 import { InfoBox, InfoBoxWithImage } from "./info-box"
 import { CarouselContainer } from "./grid"
+import { ToActionContainer } from "./to-action-container"
 
 export const Main = () => {
 
@@ -49,6 +50,7 @@ export const Main = () => {
                     )}
                 </SectionDefault>
             ))}
+            <ToActionContainer />
         </>
     )
 }
